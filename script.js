@@ -14,5 +14,7 @@ menuEl.addEventListener("click",  (event) => {
 liEls.forEach(liEls => {
     liEls.addEventListener("click", () => {
         menuTextEl.innerHTML = liEls.innerHTML;
+        socialListsEl.classList.add("hide");
+        menuEl.classList.toggle("rotate");
     })
 })
